@@ -40,3 +40,19 @@ if (ost === 1) {
 else {
     alert("Год не число или пустое имя.");
 }
+
+//Задание 10.5
+let input = prompt("Введите ваш возраст:");
+let asum = prompt ("Введите сумму кратную 1000 ")
+let inputAge = +input;
+if (inputAge < 18) {
+    alert("Не одобрено");
+} else if (18 < inputAge <= 21) {
+    alert("Вам одобрено 50000");
+} else if (22 < inputAge <= 35) {
+    alert("Вам одобрено 400000");
+} else if (36 < inputAge <= 65) {
+        alert("Вам одобрено 1000000");
+} else {
+    alert("Пустая строка")
+}
