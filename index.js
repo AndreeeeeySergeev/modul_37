@@ -70,3 +70,42 @@ const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 
 let newArr = new Set(arr);
 let publication = Array.from(newArr);
 console.log(publication);
+
+//Задание 6.3
+let tel = prompt("Введите число:");
++tel;
+let arrayge = [];
+for (let i = 0; i <= tel; i++) {
+    arrayge.push(i);
+}
+console.log(arrayge);
+
+//Задание 6.4
+/*У меня в голове вырисовывалась целая игра в "крестики-нолики", но вспомнив YANGI,
+я решил написать не совсем красивый код
+ */
+const board = [];
+let zero = 0;
+let letter = "x";
+for (let i = 0; i < 3; i++) {
+    const row = [];
+    if (i === 0) {
+        row.push(letter);
+        row.push(zero);
+        row.push(letter);
+        board.push(row);
+    }
+    if (i === 1) {
+        row.push(zero);
+        row.push(letter);
+        row.push(zero);
+        board.push(row);
+    }
+    if (i === 2) {
+        row.push(letter);
+        row.push(zero);
+        row.push(letter);
+        board.push(row);
+    }
+}
+console.log(board);
