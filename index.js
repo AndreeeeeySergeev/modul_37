@@ -62,5 +62,11 @@ let word = prompt("Введите слово: ");
 if (word[0] === word.at(-1)) {
     alert("Слово полиндром");
 } else {
-    alert("Слово не полиндром");
+    alert(`Слово ${word} не полиндром`);
 }
+
+// Задание 6.2
+const arr = [1, 2, 3, 1, 5, 4, 2, 3, 5, 'they', 'don\'t', 'know', 'that', 'we', 'know', 'that', 'they', 'know' ];
+let newArr = new Set(arr);
+let publication = Array.from(newArr);
+console.log(publication);
