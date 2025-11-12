@@ -109,3 +109,26 @@ for (let i = 0; i < 3; i++) {
     }
 }
 console.log(board);
+
+//Задание 6.5
+const obj = {
+    some: 'some',
+    dom: 'text',
+    arr: [1, 2, 3, 4, 5],
+    tom: 'there'
+};
+let arrValues = [];
+
+for (let key in obj) {
+    arrValues.push(obj[key]);
+}
+let third = arrValues[3];
+let second = arrValues[2];
+arrValues.pop();
+arrValues.pop()
+
+for (let b of second) {
+    arrValues.push(b);
+}
+arrValues.push(third);
+console.log(arrValues);
